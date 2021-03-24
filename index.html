@@ -21,7 +21,19 @@
       <option value="newestDate">Newest Date</option>
     </select>
   </div>
+  <div class="w-50 m-auto py-5 ">
+    <label class="mb-1"  for=""> Search By Date EX:2021-03-06 </label>
+    <input id="searchInp"  placeholder="Search By Date EX:2021-03-06"  onkeyup="searchAndValid(this.value)" class="form-control">
+    
+    <div class="valid-feedback text-left mt-1">
+    <h6>Looks good!</h6>  
+    </div>
+    <div class="invalid-feedback text-left mt-1">
+     <h6>Error! Invalid date format. Please enter the date in the format "YYYY-MM-DD".</h6> 
+    </div>
 
+    
+</div>
     <div id="rowData" class="row">
       
     </div>
